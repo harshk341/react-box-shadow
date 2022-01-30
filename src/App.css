@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
 }
-.app-header {
+.app-header, .app-content {
     width: 100%;
 }
 .app-logo {
@@ -19,4 +19,16 @@
     font-weight: 500;
     word-spacing: 0.2rem;
     text-transform: uppercase;
+}
+.app-content .app-content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.app-content-wrapper .box {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
 }
