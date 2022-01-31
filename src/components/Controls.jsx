@@ -1,5 +1,5 @@
 import React from 'react';
-import { length, color } from '../helpers/controls';
+import { length, color } from '../constants/controls';
 import Input from './Input';
 
 const Controls = ({ }) => {
