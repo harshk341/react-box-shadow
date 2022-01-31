@@ -1,13 +1,14 @@
 import React, { memo } from 'react';
-import { Box, Snippet } from '../components';
+import { Snippet } from '../components';
 import { Controls } from '../components';
+import BoxContainer from './BoxContainer';
 
 const Main = (prop) => {
     return (
         <>
             <div className="app-content">
                 <div className="app-content-wrapper">
-                    <Box />
+                    <BoxContainer />
                     <Controls />
                     <Snippet />
                 </div>
