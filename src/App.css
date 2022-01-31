@@ -23,12 +23,45 @@
 .app-content .app-content-wrapper {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 1rem;
 }
 .app-content-wrapper .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15rem;
+    font-size: 1.5rem;
     height: 15rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.controls > div {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+.controls > div > span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.controls > div > div {
+    display: flex;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+.controls > div > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
 }

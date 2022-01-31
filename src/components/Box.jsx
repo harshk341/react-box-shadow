@@ -2,7 +2,9 @@ import React, { memo } from 'react';
 
 const Box = ({}) => {
     return (
-        <div className="box"></div>
+        <div className="box">
+            <span>Box</span>
+        </div>
     );
 }
  
