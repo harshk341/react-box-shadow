@@ -1,16 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import withContainer from './HOCs/withContainer';
 
-const Snippet = ({ }) => {
+const Snippet = ({
+    shadow
+}) => {
+
     return (
         <div className="snippet">
             <div>
                 <button type="button">Copy</button>
                 <div className="snippet-value">
-                    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+                    {`box-shadow: ${shadow}`}
                 </div>
             </div>
         </div>
     );
 }
+Snippet.propTypes = {
+    shadow: PropTypes.string
+}
 
-export default Snippet;
+export default withContainer(Snippet);

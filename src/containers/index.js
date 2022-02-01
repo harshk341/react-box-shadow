@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
-import { Snippet } from '../components';
 import { Controls } from '../components';
 import BoxContainer from './BoxContainer';
+import SnippetContainer from './SnippetContainer';
 
 const Main = (prop) => {
     return (
@@ -10,7 +10,7 @@ const Main = (prop) => {
                 <div className="app-content-wrapper">
                     <BoxContainer />
                     <Controls />
-                    <Snippet />
+                    <SnippetContainer />
                 </div>
             </div>
         </>
