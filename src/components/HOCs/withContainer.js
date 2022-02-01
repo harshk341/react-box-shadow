@@ -7,12 +7,12 @@ const withContainer = (InnerComponent) => {
     const Component = ({
         h_offset,
         v_offset,
-        blur,
-        spread,
+        blur_ef,
+        spread_ef,
         red_color,
         blue_color,
         green_color,
-        alpha
+        alpha_op
     }) => {
 
         const [shadow, setShadow] = useState(null);
@@ -21,24 +21,24 @@ const withContainer = (InnerComponent) => {
 
         useEffect(() => {
 
-            setShadowColor(color(red_color, blue_color, green_color, alpha));
+            setShadowColor(color(red_color, blue_color, green_color, alpha_op));
 
         }, [
             red_color,
             blue_color,
             green_color,
-            alpha
+            alpha_op
         ]);
 
         useEffect(() => {
 
-            setShadowLength(length(h_offset, v_offset, blur, spread));
+            setShadowLength(length(h_offset, v_offset, blur_ef, spread_ef));
 
         }, [
             h_offset,
             v_offset,
-            blur,
-            spread,
+            blur_ef,
+            spread_ef,
         ]);
 
         useEffect(() => {
@@ -56,12 +56,12 @@ const withContainer = (InnerComponent) => {
 withContainer.propTypes = {
     h_offset: PropTypes.number,
     v_offset: PropTypes.number,
-    blur: PropTypes.number,
-    spread: PropTypes.number,
+    blur_ef: PropTypes.number,
+    spread_ef: PropTypes.number,
     red_color: PropTypes.number,
     blue_color: PropTypes.number,
     green_color: PropTypes.number,
-    alpha: PropTypes.number
+    alpha_op: PropTypes.number
 }
 
 export default withContainer;

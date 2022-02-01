@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
-import { Controls } from '../components';
 import BoxContainer from './BoxContainer';
+import ControlContainer from './ControlContainer';
 import SnippetContainer from './SnippetContainer';
 
 const Main = (prop) => {
@@ -9,7 +9,7 @@ const Main = (prop) => {
             <div className="app-content">
                 <div className="app-content-wrapper">
                     <BoxContainer />
-                    <Controls />
+                    <ControlContainer />
                     <SnippetContainer />
                 </div>
             </div>

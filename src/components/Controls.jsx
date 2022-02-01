@@ -1,8 +1,18 @@
 import React from 'react';
 import { length, color } from '../constants/controls';
+import { setDispatcher } from '../helpers';
 import Input from './Input';
 
-const Controls = ({ }) => {
+const Controls = ({
+    red,
+    blue,
+    green,
+    alpha,
+    hoffSet,
+    voffSet,
+    blur,
+    spread
+}) => {
 
     const renderControl = (controls, title) => {
         controls = controls.map(
@@ -19,6 +29,16 @@ const Controls = ({ }) => {
                     title={inputFor}
                     maxValue={maxValue}
                     minValue={minValue}
+                    dispatcher={setDispatcher({
+                        red,
+                        blue,
+                        green,
+                        alpha,
+                        hoffSet,
+                        voffSet,
+                        blur,
+                        spread
+                    }, inputFor)}
                 />
             }
         )

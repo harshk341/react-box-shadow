@@ -15,7 +15,7 @@ const voffSet = value => ({
     payload: { value }
 });
 
-const blue = value => ({
+const blur = value => ({
     type: BLUR,
     payload: { value }
 });
@@ -28,7 +28,7 @@ const spread = value => ({
 export {
     hoffSet,
     voffSet,
-    blue,
+    blur,
     spread
 };
 

@@ -5,17 +5,17 @@ import {
     ALPHA
 } from '../constants/ActionTypes';
 
-const hoffSet = value => ({
+const red = value => ({
     type: RED_COLOR,
     payload: { value }
 });
 
-const voffSet = value => ({
+const blue = value => ({
     type: BLUE_COLOR,
     payload: { value }
 });
 
-const blue = value => ({
+const green = value => ({
     type: GREEN_COLOR,
     payload: { value }
 });
@@ -26,10 +26,10 @@ const alpha = value => ({
 });
 
 export {
-    hoffSet,
-    voffSet,
+    red,
     blue,
-    spread
+    green,
+    alpha
 };
 
 

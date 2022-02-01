@@ -1,50 +1,52 @@
+import { InputName } from "./inputName";
+
 const length = [
     {
-        inputFor: 'h-offset',
-        inputType: 'number',
+        inputFor: InputName.H_OFFSET,
+        inputType: 'range',
         maxValue: '100',
         minValue: '-100'
     },
     {
-        inputFor: 'v-offset',
-        inputType: 'number',
+        inputFor: InputName.V_OFFSET,
+        inputType: 'range',
         maxValue: '100',
         minValue: '-100'
     },
     {
-        inputFor: 'blur',
-        inputType: 'number',
+        inputFor: InputName.BLUR,
+        inputType: 'range',
         maxValue: '100',
         minValue: '0'
     },
     {
-        inputFor: 'spread',
-        inputType: 'number',
+        inputFor: InputName.SPREAD,
+        inputType: 'range',
         maxValue: '100',
         minValue: '0'
     }
 ];
 const color = [
     {
-        inputFor: 'Red',
+        inputFor: InputName.RED,
         inputType: 'range',
         maxValue: '255',
         minValue: '0'
     },
     {
-        inputFor: 'Blue',
+        inputFor: InputName.BLUE,
         inputType: 'range',
         maxValue: '255',
         minValue: '0'
     },
     {
-        inputFor: 'Green',
+        inputFor: InputName.GREEN,
         inputType: 'range',
         maxValue: '255',
         minValue: '0'
     },
     {
-        inputFor: 'Alpha',
+        inputFor: InputName.ALPHA,
         inputType: 'range',
         maxValue: '100',
         minValue: '0'

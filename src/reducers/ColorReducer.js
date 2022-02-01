@@ -9,7 +9,7 @@ const Color = (state = {
     red_color: 0,
     blue_color: 0,
     green_color: 0,
-    alpha: 0
+    alpha_op: 0
 }, { type, payload }) => {
     switch (type) {
         case RED_COLOR:
@@ -30,7 +30,7 @@ const Color = (state = {
         case ALPHA:
             return {
                 ...state,
-                alpha: payload.value
+                alpha_op: payload.value
             };
         default:
             return state;

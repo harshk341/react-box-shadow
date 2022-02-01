@@ -34,6 +34,7 @@
     width: 15rem;
     font-size: 1.5rem;
     height: 15rem;
+    border: 1px solid #ddd;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
 }

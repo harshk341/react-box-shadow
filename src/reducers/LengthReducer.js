@@ -8,8 +8,8 @@ import {
 const Length = (state = {
     h_offset: 0,
     v_offset: 0,
-    blur: 0,
-    spread: 0
+    blur_ef: 0,
+    spread_ef: 0
 }, { type, payload }) => {
     switch (type) {
         case H_OFFSET:
@@ -25,12 +25,12 @@ const Length = (state = {
         case BLUR:
             return {
                 ...state,
-                blur: payload.value
+                blur_ef: payload.value
             };
         case SPREAD:
             return {
                 ...state,
-                spread: payload.value
+                spread_ef: payload.value
             };
         default:
             return state;
