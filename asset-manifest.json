@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-box-shadow/static/css/main.ee52defa.css",
+    "main.js": "/react-box-shadow/static/js/main.765d6b34.js",
+    "static/js/787.00a1ef90.chunk.js": "/react-box-shadow/static/js/787.00a1ef90.chunk.js",
+    "index.html": "/react-box-shadow/index.html",
+    "main.ee52defa.css.map": "/react-box-shadow/static/css/main.ee52defa.css.map",
+    "main.765d6b34.js.map": "/react-box-shadow/static/js/main.765d6b34.js.map",
+    "787.00a1ef90.chunk.js.map": "/react-box-shadow/static/js/787.00a1ef90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee52defa.css",
+    "static/js/main.765d6b34.js"
+  ]
+}
